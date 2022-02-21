@@ -7,10 +7,10 @@
 
     <context:annotation-config></context:annotation-config>
 
-    <bean id="userService" class="com.in28minutes.learnspringboot.courses.controller.accountservice"
+   <!-- <bean id="userService" class="com.in28minutes.learnspringboot.courses.controller.accountservice"
           init-method="init" destroy-method="destroy">
         <property name="dbUrl" value="jdbc:postgresql://localhost:5432/userdatabase"></property>
         <property name="dbUsername" value="postgres"></property>
         <property name="dbPassword" value="2000150a"></property>
-    </bean>
+    </bean>-->
 </beans>

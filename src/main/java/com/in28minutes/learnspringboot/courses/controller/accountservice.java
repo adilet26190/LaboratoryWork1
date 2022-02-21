@@ -1,6 +1,5 @@
 package com.in28minutes.learnspringboot.courses.controller;
 
-import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.sql.*;
 
@@ -28,14 +27,14 @@ public class accountservice {
         this.dbPassword = dbPassword;
     }
 
-    @PostConstruct
+    //@PostConstruct
     // public void init() {
     //
     //}
 
-    public void init() throws Exception {
-        select();
-    }
+    // public void init() throws Exception {
+    //    select();
+    // }
 
 
     public void select() throws Exception, SQLException {
@@ -74,4 +73,6 @@ public class accountservice {
     public void closeConnections() {
         System.out.println("UserService.closeConnections");
     }
+
+
 }
