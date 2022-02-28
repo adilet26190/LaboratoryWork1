@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>List account</title>
+    <link rel="stylesheet"type="text/css"th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="container text-center">
+    <h1>account List</h1>
+    <div>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Pincode</th>
+                <th>cash</th>
+                <th>Bank</th>
+            </tr>
+            </thead>
+            <tbody>
+            <th:block th:each="account : ${Accountlist}">
+                <tr>
+                    <td>[[${account.id}]]</td>
+                    <td>[[${account.pincode}]]</td>
+                    <td>[[${account.cash}]]</td>
+                    <td>[[${account.bank.name}]]</td>
+                    <td>
+                        <a th:href="@{'/accounts/edit/'+${account.id}}">Edit</a>
+                    </td>
+                </tr>
+            </th:block>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
