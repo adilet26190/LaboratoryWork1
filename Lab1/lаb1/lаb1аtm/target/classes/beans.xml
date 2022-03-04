@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--default-init-method="init" default-destroy-method="destroy">-->
+
+    <context:annotation-config></context:annotation-config>
+
+   <!-- <bean id="userService" class="com.in28minutes.learnspringboot.courses.controller.accountservice"
+          init-method="init" destroy-method="destroy">
+        <property name="dbUrl" value="jdbc:postgresql://localhost:5432/userdatabase"></property>
+        <property name="dbUsername" value="postgres"></property>
+        <property name="dbPassword" value="2000150a"></property>
+    </bean>-->
+</beans>
